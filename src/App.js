@@ -9,7 +9,7 @@ import JSEditor from "./JSEditor";
 import QuestionList from "./QuestionList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ThankYou from "./ThankYou";
-
+import Report from "./Report";
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/HTMLCSSEditor" element={<HTMLCSSEditor />} />
         <Route path="/JSEditor" element={<JSEditor />} />
         <Route path="/ThankYou" element={<ThankYou />} />
+        <Route path="/Repot" element={<Report />} />
       </Routes>
       
     </Router>
