@@ -21,7 +21,7 @@ function App() {
         <Route path="/HTMLCSSEditor" element={<HTMLCSSEditor />} />
         <Route path="/JSEditor" element={<JSEditor />} />
         <Route path="/ThankYou" element={<ThankYou />} />
-        <Route path="/Repot" element={<Report />} />
+        <Route path="/Report" element={<Report />} />
       </Routes>
       
     </Router>
