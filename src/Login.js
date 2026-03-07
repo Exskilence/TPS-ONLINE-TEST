@@ -30,7 +30,7 @@ function Login() {
                 sessionStorage.setItem('Email', email);
                 sessionStorage.setItem('Picture', picture);
                 
-                const loginResponse = await axios.post('https://thoughtprocesstestbackend.azurewebsites.net/login/', {
+                const loginResponse = await axios.post('https://thoughtprocesstestbackend.azurewebsites.net/loginmcq/', {
                     email: email
                 }, {
                     headers: { 'Content-Type': 'application/json' }
@@ -41,7 +41,8 @@ function Login() {
                 if (loginResponse.status === 200 && loginResponse.data.status === "success") {
                     console.log('LoginData sent successfully');
                     console.log("Varun", loginResponse.data.UID);
-                   sessionStorage.setItem('UID', loginResponse.data.UID);
+                    sessionStorage.setItem('UID', loginResponse.data.UID);
+                    sessionStorage.setItem('test_type', 'mcq');
                     navigate('/Instruction');
                 }
                 else if (loginResponse.status === 200 && loginResponse.data.status === "Test Completed") {

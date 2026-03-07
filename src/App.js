@@ -10,12 +10,14 @@ import QuestionList from "./QuestionList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ThankYou from "./ThankYou";
 import Report from "./Report";
+import Test from "./Test";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/Instruction" element={<Instructions />} />
+        <Route path="/Test" element={<Test />} />
         <Route path="/SQLEditor" element={<SQLEditor />} />
         <Route path="/PyEditor" element={<PyEditor />} />
         <Route path="/HTMLCSSEditor" element={<HTMLCSSEditor />} />
