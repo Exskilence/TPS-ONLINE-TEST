@@ -92,7 +92,7 @@ function Instructions() {
             <img src={problems} alt="Problems" style={{ width: "50px", height: "50px" }} />
           </div>
           <div className="ms-2">
-            <p className="m-0 fs-5 fw-bold">30</p>
+            <p className="m-0 fs-5 fw-bold">50</p>
             <p className="m-0">questions to be solved</p>
           </div>
         </div>
