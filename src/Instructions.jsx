@@ -17,7 +17,7 @@ function Instructions() {
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          "https://thoughtprocesstestbackend.azurewebsites.net/get/coding/",
+          "https://thoughtprocesstestbackend.azurewebsites.net/get/questions/",
           {
             email: sessionStorage.getItem('Email')
           }
@@ -50,6 +50,10 @@ function Instructions() {
   }, []);
 
   const handleStartTest = () => {
+    if (sessionStorage.getItem('test_type') === 'mcq') {
+      navigate("/Test");
+      return;
+    }
     if (data && data.data && data.data.length > 0) {
       const htmlcss = data.data[0];
       const js = data.data[1];
@@ -88,7 +92,7 @@ function Instructions() {
             <img src={problems} alt="Problems" style={{ width: "50px", height: "50px" }} />
           </div>
           <div className="ms-2">
-            <p className="m-0 fs-5 fw-bold">4</p>
+            <p className="m-0 fs-5 fw-bold">50</p>
             <p className="m-0">questions to be solved</p>
           </div>
         </div>
