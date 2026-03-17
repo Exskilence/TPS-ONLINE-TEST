@@ -92,7 +92,7 @@ function Instructions() {
             <img src={problems} alt="Problems" style={{ width: "50px", height: "50px" }} />
           </div>
           <div className="ms-2">
-            <p className="m-0 fs-5 fw-bold">50</p>
+            <p className="m-0 fs-5 fw-bold">60</p>
             <p className="m-0">questions to be solved</p>
           </div>
         </div>
@@ -116,7 +116,7 @@ function Instructions() {
             <li style={{ color: "black" }}>Microsoft Edge</li>
             <li style={{ color: "black" }}>Apple Safari</li>
           </ul>
-          <p className="ps-5">After completing four questions, please press the submit button to finalize your test.</p>
+          <p className="ps-5">After completing all questions, please press the submit button to finalize your test.</p>
         </div>
       </div>
       <div className="d-flex justify-content-end pe-4 mt-3">
